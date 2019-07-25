@@ -1,0 +1,11 @@
+ /* CUSTOM SETTINGS FOR BOOTSRAP */
+
+.collapse {
+    opacity: 1;
+    transition: all .3s;
+}
+
+.collapsing {
+    opacity: 0;
+    transition: all .35s;
+}

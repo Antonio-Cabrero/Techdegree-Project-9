@@ -1,26 +1,29 @@
 // Nav Buttons
 
 const home = document.getElementById('home'),
-      skillsBtn = document.getElementById('skills'),
-      projectsBtn = document.getElementById('projects'),
-      aboutBtn = document.getElementById('about');
+      skillSec = document.getElementById('skills'),
+      projectsSec = document.getElementById('projects'),
+      aboutSec = document.getElementById('about');
 
 home.addEventListener('click', (e)=> {
     let element = e.target;
 
     if (element.innerText === 'Skills'){
-        projectsBtn.classList.remove('show');
-        aboutBtn.classList.remove('show');
+        projectsSec.classList.remove('show');
+        aboutSec.classList.remove('show');
+
     } else if (element.innerText === 'Projects') {
-        skillsBtn.classList.remove('show');
-        aboutBtn.classList.remove('show');
+        skillSec.classList.remove('show');
+        aboutSec.classList.remove('show');
+
     } else if (element.innerText === 'About me') {
-        projectsBtn.classList.remove('show');
-        skillsBtn.classList.remove('show');
+        projectsSec.classList.remove('show');
+        skillSec.classList.remove('show');
+
     }
 })
 
-
+// Functions
 
 
 // Skills Section
