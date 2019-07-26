@@ -13,19 +13,18 @@ home.addEventListener('click', (e)=> {
 
     if (element.innerText === 'Skills'){
 
-        sectionFade(skillSec);
-        sectionFade(skillSec);
-        // sectionSwitch(".getSkills()", projectsSec, aboutSec)
+        fadeInOutText(title); 
+        sectionSwitch(".getSkills()", projectsSec, aboutSec)
         setTimeout(revertText, 1250);
 
     } else if (element.innerText === 'Projects') {
         fadeInOutText(title);
-        // sectionSwitch(".getProjects()", skillSec, aboutSec)
+        sectionSwitch(".getProjects()", skillSec, aboutSec)
         setTimeout(revertText, 1250);
 
     } else if (element.innerText === 'About me') {
         fadeInOutText(title);
-        // sectionSwitch(".getInfo()", projectsSec, skillSec)
+        sectionSwitch(".getInfo()", projectsSec, skillSec)
         setTimeout(revertText, 1250);
 
     }
