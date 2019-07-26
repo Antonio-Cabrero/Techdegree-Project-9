@@ -1,0 +1,67 @@
+ /* CUSTOM SETTINGS FOR BOOTSRAP */
+.h3,
+.h6 {
+  color: #950740;
+  font-weight: 600;
+}
+
+/* .collapse {
+    opacity: 1;
+}
+
+.collapsing {
+  position: relative;
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  transition: all .3s ease;
+} */
+
+
+/* header */
+.jumbotron {
+  background-color: #1A1A1D;
+  color: #fff;
+}
+
+.display-4 {
+ color: #950740;
+}
+
+/* List items */
+
+.list-group-item {
+  background-color: #4e4e50;
+}
+
+/* Buttons */
+.btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.btn-outline-dark {
+  color: rgba(255, 255, 255, 0.712);
+  border: none;
+}
+  .btn-outline-dark:hover {
+    background-color: #6f2232;
+  }
+  
+
+.btn-secondary {
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  background-color: #4e4e50;
+}
+
+/* CARDS */
+
+.card {
+  color: #7e7e81;
+  background-color: #202022;
+}
+
+
+

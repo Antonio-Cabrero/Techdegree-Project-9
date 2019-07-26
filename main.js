@@ -1,87 +1,73 @@
 // Nav Buttons
 
+
 const home = document.getElementById('home'),
       skillSec = document.getElementById('skills'),
       projectsSec = document.getElementById('projects'),
       aboutSec = document.getElementById('about');
+let   title = document.querySelector('.get');
 
 home.addEventListener('click', (e)=> {
     let element = e.target;
+    
 
     if (element.innerText === 'Skills'){
-        projectsSec.classList.remove('show');
-        aboutSec.classList.remove('show');
+
+        sectionFade(skillSec);
+        sectionFade(skillSec);
+        // sectionSwitch(".getSkills()", projectsSec, aboutSec)
+        setTimeout(revertText, 1250);
 
     } else if (element.innerText === 'Projects') {
-        skillSec.classList.remove('show');
-        aboutSec.classList.remove('show');
+        fadeInOutText(title);
+        // sectionSwitch(".getProjects()", skillSec, aboutSec)
+        setTimeout(revertText, 1250);
 
     } else if (element.innerText === 'About me') {
-        projectsSec.classList.remove('show');
-        skillSec.classList.remove('show');
+        fadeInOutText(title);
+        // sectionSwitch(".getInfo()", projectsSec, skillSec)
+        setTimeout(revertText, 1250);
 
     }
 })
 
 // Functions
 
+function getChangeText(string) {
+    title.innerText = string;
+    title.classList = " text-muted";
+}
 
-// Skills Section
+function removeClass(classToRemove, element){
+    element.classList.remove(classToRemove)
+}
 
-const progCanvas = document.getElementById("skill-canvas");
+function sectionSwitch(stringChange,sec1,sec2){
+    getChangeText(stringChange);
+    removeClass('show',sec1);
+    removeClass('show',sec2);
+}
 
-let programmingChart = new Chart(progCanvas, {
-    type: 'polarArea',
-    data: {
-        labels: ["JavaScript", "Sass", "Bootstrap","React", "CSS"],
-        datasets: [{
-            data: [60, 50, 70, 20, 80, 100],
-            borderWidth: 0,
-            boderAlign: 'inner',
-            backgroundColor: [
-                '#ecd625d9',
-                '#bf4080d9',
-                '#563d7cd9',
-                '#61dafbd9',
-                '#254BDFd9',
-                '#dbdbdb45'
-            ]
-        }]
-    },
-    options: {
-        legend: {
-         position: 'right',
-         labels: {
-            boxWidth: 20,
-            fontStyle: 'bold'
-            }
-        }
+function revertText() {
+    title.innerText = "Cabrero";
+    removeClass("text-muted",title);
+}
+
+function fadeInOutText (element) {
+    element.animate([
+        {opacity: 0},
+        {opacity: 1},
+        {opacity: 0},
+        {opacity: 1}],
+        {duration: 2000,
+        iterations: 1}
+    ) 
+}
+
+function sectionFade(section){
+    if (section.style.display === "none"){
+        section.style.display === "block"
+        section.style.opacity === "1"
     }
-});
+}
 
-const softCanvas = document.getElementById("soft-canvas");
-
-let softChart = new Chart(softCanvas, {
-    type: 'radar',
-    data: {
-        labels: ["Communication", "Teamwork", "Teachable","Creativity", "Public Speaking"],
-        datasets: [{
-            label: 'Development %',
-            data: [86, 85, 90, 95, 80],
-            borderWidth: 2,
-            borderColor: '#61dafb',
-            boderAlign: 'inner',
-            backgroundColor: '#61dafb55',
-            pointBorderColor: '#61dafb'
-        }]
-    },
-    options: {
-        legend: {
-         position: 'right',
-         labels: {
-            boxWidth: 20,
-            fontStyle: 'bold'
-            }
-        }
-    }
-});

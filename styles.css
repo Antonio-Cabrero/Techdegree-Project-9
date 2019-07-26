@@ -1,12 +1,31 @@
- /* CUSTOM SETTINGS FOR BOOTSRAP */
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:200,300,600&display=swap');
 
-.collapse {
-    opacity: 1;
-    transition: all .3s;
+*{
+    font-family: 'Work Sans', sans-serif;
 }
 
-.collapsing {
-    opacity: 0;
-    transition: all .35s;
+.profile {
+    max-height: 340px;
 }
 
+body {
+    background-color: #1A1A1D;
+}
+
+/* SOCIAL ICONS */
+
+.social-link {
+    color: #950740;
+    height: 2.4em;
+    width: 2.4em;
+    border: .5px solid #950740;
+    border-radius: 50%;
+}
+
+.icon svg{
+    padding: 6px;
+    height: 2.2rem;
+    width: 2.2rem;
+}
+
+/* ANIMATIONS */
