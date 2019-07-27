@@ -74,6 +74,7 @@ footer .contact-btn {
 .card {
   color: #7e7e81;
   background-color: #202022;
+  height: 100%;
 }
 
 .card-title {
@@ -88,6 +89,7 @@ footer .contact-btn {
 
 .card-link {
   color: #950740;
+  margin-top: auto;
 }
   .card-link:hover {
     color: rgba(255, 255, 255, 0.712);
