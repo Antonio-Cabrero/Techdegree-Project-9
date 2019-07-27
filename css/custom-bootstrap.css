@@ -1,14 +1,10 @@
- @import url('https://fonts.googleapis.com/css?family=Work+Sans:200,400,600&display=swap');
+ @import url('https://fonts.googleapis.com/css?family=Work+Sans:200,300,400,600&display=swap');
  
  /* CUSTOM SETTINGS FOR BOOTSRAP */
-.h6 {
-  color: #950740;
-  font-weight: 600;
-}
 
 
 .h3 {
-  font-weight: 400;
+  font-weight: 300;
   color: #950740;
 }
 
@@ -42,6 +38,7 @@
 /* List items */
 
 .list-group-item {
+  color: rgba(255, 255, 255, 0.712);
   font-weight: 200;
   border: .5px solid #950740;
   background-color: transparent;;
@@ -66,7 +63,7 @@
 footer .contact-btn {
   color: #950740;
   font-weight: 400;
-  border-color: #950740;
+  max-width: 150px;
 }
   footer .contact-btn:hover {
     background-color: #950740;
@@ -77,6 +74,16 @@ footer .contact-btn {
 .card {
   color: #7e7e81;
   background-color: #202022;
+}
+
+.card-title {
+  font-weight: 300;
+  color: #950740 ;
+}
+
+.card-text {
+  font-weight: 200;
+  color: rgba(255, 255, 255, 0.712);
 }
 
 .card-link {
@@ -103,3 +110,43 @@ footer .contact-btn {
     .img-thumbnail:hover {
       background-image: url()
     }
+
+    @media (max-width: 420px) {
+      .img-thumbnail {
+        max-width: 150px;
+      }
+    }
+
+  /* MODAL CONTACT */
+
+.modal-content {
+  background-color: #202022;
+  font-weight: 200;
+  border: .75px solid #950740;
+  color: rgba(255, 255, 255, 0.712);
+}
+
+.modal-header {
+  color: #950740;
+  border-bottom: .5px solid #950740;
+}
+
+.modal-footer {
+  justify-content: space-around;
+  border-top: .5px solid #950740;
+}
+  .modal-footer .send-btn:hover {
+    color: #079532;
+    font-weight: 400;
+    border: .5px solid #079532;
+  }
+  .modal-footer .close-btn:hover {
+    color: #c3073f;
+    font-weight: 400;
+    border: .5px solid #c3073f;
+  }
+
+  #about p {
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.712);   
+  }

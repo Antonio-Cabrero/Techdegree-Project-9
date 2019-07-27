@@ -24,14 +24,14 @@
             <span class="get">Cabrero</span>
           </div>
         </div>
-        <div class="container-fluid d-flex justify-content-center">
+        <nav class="container-fluid d-flex justify-content-center">
         <button id="skillsBtn" class="btn  mx-2 mt-3" type="button" data-toggle="collapse" data-target="#skills" aria-expanded="false" aria-controls="skills">
           SKILLS</button>
         <button class="btn  mx-2 mt-3" type="button" data-toggle="collapse" data-target="#projects" aria-expanded="false" aria-controls="projects">
           PROJECTS</button>
         <button class="btn  mx-2 mt-3" type="button" data-toggle="collapse" data-target="#about" aria-expanded="false" aria-controls="about">
           ABOUT</button>
-      </div>   
+      </nav>   
      </div>
 
     
@@ -71,7 +71,7 @@
           <div class="row my-4 ">
             <div class="col-sm-6 col-lg-4">
               <div class="card">
-                  <img src="/Graphics/images/web-dashboard.JPG" class="card-img-top" alt="Web app dashboard">
+                  <img src="/graphics/images/web-dashboard.JPG" class="card-img-top" alt="Web app dashboard">
                   <div class="card-body">
                     <h5 class="card-title">WebApp Dashboard</h5>
                     <p class="card-text">A user interface that promotes interactivity and usability.</p>
@@ -81,7 +81,7 @@
             </div>
             <div class="col-sm-6 col-lg-4">
               <div class="card">
-                  <img src="/Graphics/images/employee-dir.JPG" class="card-img-top" alt="Web app dashboard">
+                  <img src="/graphics/images/employee-dir.JPG" class="card-img-top" alt="Web app dashboard">
                   <div class="card-body">
                     <h5 class="card-title">Employee Directory</h5>
                     <p class="card-text">A searchable employee directory that fetches data a third-party API.</p>
@@ -91,7 +91,7 @@
             </div>
             <div class="col-sm-6 col-lg-4">
               <div class="card">
-                  <img src="/Graphics/images/img-gallery.JPG" class="card-img-top" alt="Web app dashboard">
+                  <img src="/graphics/images/img-gallery.JPG" class="card-img-top" alt="Web app dashboard">
                   <div class="card-body">
                     <h5 class="card-title">Photo Gallery</h5>
                     <p class="card-text">Interactive searchable photo gallery.</p>
@@ -101,7 +101,7 @@
             </div>
             <div class="col-sm-6 col-lg-4">
                 <div class="card">
-                    <img src="/Graphics/images/employee-dir.JPG" class="card-img-top" alt="Web app dashboard">
+                    <img src="/graphics/images/employee-dir.JPG" class="card-img-top" alt="Web app dashboard">
                     <div class="card-body">
                       <h5 class="card-title">Wheel of Success</h5>
                       <p class="card-text">A word guessing game to unwind after a long day at work.</p>
@@ -111,7 +111,7 @@
             </div>
             <div class="col-sm-6 col-lg-4">
                 <div class="card">
-                  <img src="/Graphics/images/wheel-success.JPG" class="card-img-top" alt="Web app dashboard">
+                  <img src="/graphics/images/wheel-success.JPG" class="card-img-top" alt="Web app dashboard">
                   <div class="card-body">
                     <h5 class="card-title">Webstyle</h5>
                     <p class="card-text">A show case of Sass skills.</p>
@@ -130,10 +130,10 @@
           <h2 class="h3 mb-2">ABOUT</h2> 
           <div class="row">
             <div class="col-sm-6 my-3">
-              <img class="img-thumbnail rounded-circle mx-auto d-block mb-3" src="/Graphics/images/bitmoji-20190726031116.png" alt="Antonio Cabrero">
+              <img class="img-thumbnail rounded-circle mx-auto d-block mb-3" src="/graphics/images/bitmoji-20190726031116.png" alt="Antonio Cabrero">
             </div>
             <div class="col-sm-6 p-0">
-              <h6 class="h3 mb-3">Hi! My names is Antonio Cabrero, and I am a Front End Web Developer.</h6>
+              <h2 class="h3 mb-3">Hi! My names is Antonio Cabrero, and I am a Front End Web Developer.</h2>
               <p>I have always been a creative person, and I enjoy drawing and illustration. However, I felt like there was always something missing. I wanted to make my creations take life, and that is why I became a developer.</p>
                 
               <p>Creating useful, interactive and user-friendly applications and websites it what I am all about.</p>
@@ -148,7 +148,7 @@
 
     <!-- CONTACT -->
     <footer class="container d-flex flex-column mb-4">
-      <button class="h3 mb-2 text-capitalize btn contact-btn" data-toggle="modal" data-target="#contact">CONTACT</button>
+      <button class="h3 mb-2 text-capitalize btn contact-btn mx-auto" data-toggle="modal" data-target="#contact">CONTACT</button>
       <div class="row social-media d-flex justify-content-center mt-3">
         <a class="social-link mx-2" href="https://github.com/Antonio-Cabrero/" target="_blank">
           <span class="icon">
@@ -169,20 +169,19 @@
 
       
       <div class="modal fade" id="contact" tabindex="-1" role="dialog" aria-labelledby="contact" aria-hidden="true">
-          <div class="modal-dialog" role="document">
+          <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
               <div class="modal-header">
-                <h5 class="modal-title" id="contactMe">Modal title</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  
-                </button>
+                <h5 class="modal-title" id="contactMe">Get in touch</h5>                
               </div>
               <div class="modal-body">
-                ...
+
+                <h6 class="mb-3">Interested in building a project together?</h6>
+                <p>Fill up the form below or send an email to anotniocsog@hotmail.com and let's get going!</p>
               </div>
               <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
+                <button type="button" class="btn close-btn" data-dismiss="modal">Close</button>
+                <button type="button" class="btn send-btn">Send</button>
               </div>
             </div>
           </div>
