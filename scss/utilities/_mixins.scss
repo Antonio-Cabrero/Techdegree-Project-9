@@ -1,0 +1,11 @@
+// Images setter
+
+@mixin img-setter($map) {
+    @each $project, $img in $map {
+
+        .#{$project} {
+            background-image: url($img); 
+        }
+        
+    }
+}

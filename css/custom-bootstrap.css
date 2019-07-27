@@ -1,21 +1,28 @@
+ @import url('https://fonts.googleapis.com/css?family=Work+Sans:200,400,600&display=swap');
+ 
  /* CUSTOM SETTINGS FOR BOOTSRAP */
-.h3,
 .h6 {
   color: #950740;
   font-weight: 600;
 }
 
-/* .collapse {
+
+.h3 {
+  font-weight: 400;
+  color: #950740;
+}
+
+
+.collapse {
     opacity: 1;
 }
 
 .collapsing {
   position: relative;
-  opacity: 0;
   height: 0;
   overflow: hidden;
-  transition: all .3s ease;
-} */
+  transition: height .5s ease;
+}
 
 
 /* header */
@@ -28,33 +35,42 @@
  color: #950740;
 }
 
+/* Containers  */
+
+
+
 /* List items */
 
 .list-group-item {
-  background-color: #4e4e50;
+  font-weight: 200;
+  border: .5px solid #950740;
+  background-color: transparent;;
 }
 
+
 /* Buttons */
+
+.btn {
+  color: rgba(255, 255, 255, 0.712);
+  font-weight: 200;
+} 
+   .btn:hover {
+     color: #fff;
+   }
+
 .btn:focus {
   outline: none;
   box-shadow: none;
 }
 
-.btn-outline-dark {
-  color: rgba(255, 255, 255, 0.712);
-  border: none;
+footer .contact-btn {
+  color: #950740;
+  font-weight: 400;
+  border-color: #950740;
 }
-  .btn-outline-dark:hover {
-    background-color: #6f2232;
+  footer .contact-btn:hover {
+    background-color: #950740;
   }
-  
-
-.btn-secondary {
-  color: #fff;
-  font-weight: 600;
-  border: none;
-  background-color: #4e4e50;
-}
 
 /* CARDS */
 
@@ -63,5 +79,27 @@
   background-color: #202022;
 }
 
+.card-link {
+  color: #950740;
+}
+  .card-link:hover {
+    color: rgba(255, 255, 255, 0.712);
+  }
 
+.card-img-top {
+  opacity: .6;
+}
+  .card-img-top:hover {
+    opacity: 1;
+  }
 
+  /* IMAGES */
+
+  .img-thumbnail {
+    border: none;
+    padding: 0;
+    max-height: 240px;
+  }
+    .img-thumbnail:hover {
+      background-image: url()
+    }

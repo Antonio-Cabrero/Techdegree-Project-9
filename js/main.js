@@ -11,20 +11,19 @@ home.addEventListener('click', (e)=> {
     let element = e.target;
     
 
-    if (element.innerText === 'Skills'){
-
+    if (element.innerText === 'SKILLS'){
         fadeInOutText(title); 
-        sectionSwitch(".getSkills()", projectsSec, aboutSec)
+        sectionSwitch(".skills()", projectsSec, aboutSec)
         setTimeout(revertText, 1250);
 
-    } else if (element.innerText === 'Projects') {
+    } else if (element.innerText === 'PROJECTS') {
         fadeInOutText(title);
-        sectionSwitch(".getProjects()", skillSec, aboutSec)
+        sectionSwitch(".projects()", skillSec, aboutSec)
         setTimeout(revertText, 1250);
 
-    } else if (element.innerText === 'About me') {
+    } else if (element.innerText === 'ABOUT') {
         fadeInOutText(title);
-        sectionSwitch(".getInfo()", projectsSec, skillSec)
+        sectionSwitch(".info()", projectsSec, skillSec)
         setTimeout(revertText, 1250);
 
     }
