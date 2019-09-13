@@ -1,11 +1,11 @@
 // Nav Buttons
 
 
-const home = document.getElementById('home'),
-      skillSec = document.getElementById('skills'),
-      projectsSec = document.getElementById('projects'),
-      aboutSec = document.getElementById('about'),
-      contactForm = document.querySelector('#contact'),
+const home = document.querySelector('#home'),
+      skillSec = document.querySelector('#skills'),
+      projectsSec = document.querySelector('#projects'),
+      aboutSec = document.querySelector('#about'),
+      contactSec = document.querySelector('#contact'),
       contactImg = document.querySelector('#contactPic'),
       projects = document.querySelector('#projects'),
       sliders = document.querySelectorAll('.sliders')
@@ -19,17 +19,19 @@ home.addEventListener('click', (e)=> {
 
     if (element.innerText === 'SKILLS'){
         fadeInOutText(title); 
-        sectionSwitch(".skills()", projectsSec, aboutSec)
+        sectionSwitch(".skills()", projectsSec, aboutSec, contactSec)
         setTimeout(revertText, 1250);
-
     } else if (element.innerText === 'PROJECTS') {
         fadeInOutText(title);
-        sectionSwitch(".projects()", skillSec, aboutSec)
+        sectionSwitch(".projects()", skillSec, aboutSec, contactSec)
         setTimeout(revertText, 1250);
-
     } else if (element.innerText === 'ABOUT') {
         fadeInOutText(title);
-        sectionSwitch(".info()", projectsSec, skillSec)
+        sectionSwitch(".info()", projectsSec, skillSec, contactSec)
+        setTimeout(revertText, 1250);
+    } else if (element.innerText === 'CONTACT') {
+        fadeInOutText(title);
+        sectionSwitch(".contact()", projectsSec, skillSec, aboutSec)
         setTimeout(revertText, 1250);
     }
 })
@@ -41,11 +43,9 @@ projects.addEventListener('click', (e)=> {
     
     for (let i=0; i<useInfo.length; i++)
     if (e.target === useInfo[i]) { 
-        // slider.style.width = 0;
         slider[i].style.height = '100%';
         slider[i].firstElementChild.style.display = 'block';
         } else if (e.target === slider[i]) {
-        // slider.style.width = `100%`;
         slider[i].style.height = 0;
         slider[i].firstElementChild.style.display = 'none';
 
@@ -53,7 +53,7 @@ projects.addEventListener('click', (e)=> {
         }
 })
 
-contactForm.addEventListener('click', (e)=> {
+contactSec.addEventListener('click', (e)=> {
 
     let contactText = document.querySelector('legend');
     let element = e.target;
@@ -78,10 +78,11 @@ function removeClass(classToRemove, element){
     element.classList.remove(classToRemove)
 }
 
-function sectionSwitch(stringChange,sec1,sec2){
+function sectionSwitch(stringChange,sec1,sec2,sec3){
     getChangeText(stringChange);
     removeClass('show',sec1);
     removeClass('show',sec2);
+    removeClass('show',sec3);
 }
 
 function revertText() {
