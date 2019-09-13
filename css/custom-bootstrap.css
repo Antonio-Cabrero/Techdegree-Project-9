@@ -23,8 +23,8 @@
 
 /* header */
 .jumbotron {
-  background-color: #1A1A1D;
-  color: #fff;
+  background-color: rgba(255, 255, 255, 0.883);
+  color: #950740;
 }
 
 .display-4 {
@@ -38,7 +38,7 @@
 /* List items */
 
 .list-group-item {
-  color: rgba(255, 255, 255, 0.712);
+  color: #950740;
   font-weight: 200;
   border: .5px solid #950740;
   background-color: transparent;;
@@ -48,11 +48,14 @@
 /* Buttons */
 
 .btn {
-  color: rgba(255, 255, 255, 0.712);
-  font-weight: 200;
+  color: #950740;
+  font-weight: 300;
+  /* border: 1.2px solid #950740; */
 } 
    .btn:hover {
      color: #fff;
+     background-color: #950740;
+     border-bottom: 1px solid #ac094a;
    }
 
 .btn:focus {
@@ -60,20 +63,16 @@
   box-shadow: none;
 }
 
-footer .contact-btn {
-  color: #950740;
-  font-weight: 400;
-  max-width: 150px;
+.btn-group {
+  margin-top: auto;
 }
-  footer .contact-btn:hover {
-    background-color: #950740;
-  }
+
 
 /* CARDS */
 
 .card {
   color: #7e7e81;
-  background-color: #202022;
+  background-color: #ffffff;
   height: 100%;
 }
 
@@ -83,17 +82,15 @@ footer .contact-btn {
 }
 
 .card-text {
-  font-weight: 200;
-  color: rgba(255, 255, 255, 0.712);
+  font-weight: 300;
+  color: #020202;
 }
 
 .card-link {
+  font-weight: 400;
   color: #950740;
   margin-top: auto;
 }
-  .card-link:hover {
-    color: rgba(255, 255, 255, 0.712);
-  }
 
 .card-img-top {
   opacity: .6;
@@ -119,36 +116,33 @@ footer .contact-btn {
       }
     }
 
-  /* MODAL CONTACT */
+  /* CONTACT */
 
-.modal-content {
-  background-color: #202022;
-  font-weight: 200;
-  border: .75px solid #950740;
-  color: rgba(255, 255, 255, 0.712);
+
+#contact .send-btn {
+  color: #079532;
+  font-weight: 400;
+  border-color: #079532;
+  
+}
+#contact .send-btn:hover {
+  color: #ffffff;
+  background-color: #079532;
+  font-weight: 400;
+  border-bottom: 1px solid #079532;
+  border-radius: 5px;
 }
 
-.modal-header {
-  color: #950740;
-  border-bottom: .5px solid #950740;
-}
-
-.modal-footer {
-  justify-content: space-around;
+.dropdown-menu {
   border-top: .5px solid #950740;
+  background-color: #202022;
+  border-radius: 0;
 }
-  .modal-footer .send-btn:hover {
-    color: #079532;
-    font-weight: 400;
-    border: .5px solid #079532;
-  }
-  .modal-footer .close-btn:hover {
-    color: #c3073f;
-    font-weight: 400;
-    border: .5px solid #c3073f;
-  }
 
-  #about p {
-    font-weight: 300;
-    color: rgba(255, 255, 255, 0.712);   
+.dropdown-item {
+  color: #950740;
+}
+  .dropdown-item:hover {
+    background-color: transparent;
+    color: #fff;
   }

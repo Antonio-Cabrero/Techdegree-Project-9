@@ -4,7 +4,13 @@
 const home = document.getElementById('home'),
       skillSec = document.getElementById('skills'),
       projectsSec = document.getElementById('projects'),
-      aboutSec = document.getElementById('about');
+      aboutSec = document.getElementById('about'),
+      contactForm = document.querySelector('#contact'),
+      contactImg = document.querySelector('#contactPic'),
+      projects = document.querySelector('#projects'),
+      sliders = document.querySelectorAll('.sliders')
+      useInfo = document.querySelectorAll('.uses');
+
 let   title = document.querySelector('.get');
 
 home.addEventListener('click', (e)=> {
@@ -25,8 +31,40 @@ home.addEventListener('click', (e)=> {
         fadeInOutText(title);
         sectionSwitch(".info()", projectsSec, skillSec)
         setTimeout(revertText, 1250);
-
     }
+})
+
+const slider = document.querySelectorAll('.sliders'),
+        card = document.querySelector('.card');
+
+projects.addEventListener('click', (e)=> {
+    
+    for (let i=0; i<useInfo.length; i++)
+    if (e.target === useInfo[i]) { 
+        // slider.style.width = 0;
+        slider[i].style.height = '100%';
+        slider[i].firstElementChild.style.display = 'block';
+        } else if (e.target === slider[i]) {
+        // slider.style.width = `100%`;
+        slider[i].style.height = 0;
+        slider[i].firstElementChild.style.display = 'none';
+
+      
+        }
+})
+
+contactForm.addEventListener('click', (e)=> {
+
+    let contactText = document.querySelector('legend');
+    let element = e.target;
+    if (element.innerText === 'Email Me!'){
+        surprise(contactImg);
+        surprise(contactText);
+        contactImg.src = "graphics/images/bitmoji-20190727050424.png";
+        contactText.innerText = "Woohoo! Thanks for contacting me! I'll get back to you shortly!";
+        element.style.display = "none";
+    } 
+
 })
 
 // Functions
@@ -62,10 +100,13 @@ function fadeInOutText (element) {
     ) 
 }
 
-function sectionFade(section){
-    if (section.style.display === "none"){
-        section.style.display === "block"
-        section.style.opacity === "1"
-    }
+function surprise (element) {
+    element.animate([
+        {opacity: 0},
+        {opacity: 1}
+        ],
+        {duration: 1000,
+        iterations: 1}
+    ) 
 }
 
