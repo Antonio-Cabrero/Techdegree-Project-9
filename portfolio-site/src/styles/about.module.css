@@ -1,0 +1,42 @@
+.About_container {
+    padding: 3em;
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.About_h3 {
+    color: #950740;
+    font-weight: 300;
+    font-size: calc(1.3rem + 0.6vw)
+}
+
+.About_information,
+.About_paragraph {
+    margin-top: 1em;
+}
+
+.About_paragraph {
+    font-weight: 300;
+    color: #020202;
+    line-height: 1.5;
+}
+
+.About_container_img {
+    margin-bottom: 1.5em;
+    
+}
+
+.About_img {
+    display: block;
+    max-height: 240px;
+    border-radius: 50%;
+    margin: 0 auto;
+    height: auto;
+    max-width: 100%;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.12), 
+                0 2px 2px rgba(0,0,0,0.12), 
+                0 4px 4px rgba(0,0,0,0.12), 
+                0 8px 8px rgba(0,0,0,0.12),
+                0 16px 16px rgba(0,0,0,0.12);
+}
