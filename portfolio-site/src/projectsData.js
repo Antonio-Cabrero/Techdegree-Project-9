@@ -5,7 +5,7 @@ const projectsData = [
         description: "An easy to use application to help keep track of the jobs which you've applied, have followed up and/or interviewd",
         url: "job.antonioc.dev",
         repo: "https://github.com/Antonio-Cabrero/Job_tracker/",
-        img: {},
+        img: '/src/images/hello.png',
         lang: "React.js"
     },
     {

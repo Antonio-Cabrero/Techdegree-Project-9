@@ -1,20 +1,14 @@
-import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 import Navbar from './Navbar'
 import css from '../styles/header.module.css'
 
-const Header = ({ siteTitle }) => (
+const Header = ({ siteTitle, handleNavbar }) => (
   
   <header className={css.Header}>
     <div className={css.Header_container}>
-      <h1 className={css.Header_title}>
-        
-          {siteTitle}
-    
-      </h1>
-    
-      <Navbar />
+      <h1 className={css.Header_title}>   {siteTitle}    </h1>
+      <Navbar handleClick={handleNavbar}/>
     </div>
   </header>
 )

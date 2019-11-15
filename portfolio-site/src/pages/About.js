@@ -1,6 +1,7 @@
 import React from 'react';
 import css from '../styles/about.module.css'
 import profile from '../images/hello.png'
+
 function About(props) {
 
     return (
@@ -15,7 +16,7 @@ function About(props) {
                 <p className={css.About_paragraph}>Creating useful, interactive and user-friendly applications and websites it what I am all about.</p>
             </div>
         
-        </div>  
+        </div>
     );
 }
 
