@@ -22,7 +22,6 @@ h1, h2, h3 ,h4 ,h5 ,h6 {
 }
 
 h2{
-  font-size: calc(1.5rem + 0.6vw);
   text-transform: uppercase;
 }
 
@@ -34,6 +33,7 @@ p {
   font-weight: 300;
   color: #020202;
   line-height: 1.5;
+  margin: 1em 0;
 }    
 
 .Layout_wrap {

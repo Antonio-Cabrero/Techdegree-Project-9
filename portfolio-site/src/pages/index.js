@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import Layout from "../components/Layout"
+import Layout from "../components/layout"
 import SEO from "../components/seo"
 import About from "./about"
 import Skills from './skills'
@@ -25,12 +25,13 @@ const IndexPage = () => {
       case "SKILLS":  return setContentIndex(1)
       case "PROJECTS": return setContentIndex(2)
       case "CONTACT": return setContentIndex(3)
+      default: return setContentIndex(0)
     }
   }
   const transition = useTransition(contentIndex , p => p, {
-    from: { opacity: 0, transform: 'translate3d(100%,0,0)' },
-    enter: { opacity: 1, transform: 'translate3d(0%,0,0)' },
-    leave: { opacity: 0, transform: 'translate3d(-100%,0,0)' },
+     from: { opacity: 0, transform: `rotateY(90deg)`},
+    enter: { opacity: 1, transform: `rotateY(0deg)`, transformOrigin: "left"},
+    leave: { opacity: 0, transform: `rotateY(180deg)`, transformOrigin: "right" ,height: 0},
   })
 
   return ( 

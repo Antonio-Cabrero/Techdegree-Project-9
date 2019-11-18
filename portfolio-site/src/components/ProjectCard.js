@@ -10,8 +10,8 @@ function ProjectCard(props) {
                 <p>{props.description}</p>
             </div>
             <div className={css.ProjectCard_container_btn}>
-                <a className={css.ProjectCard_btn}>Live Project</a>
-                <a className={css.ProjectCard_btn}>Repository</a>
+                <a className={css.ProjectCard_btn} href={props.url}>Live Project</a>
+                <a className={css.ProjectCard_btn} href={props.repo}>Repository</a>
             </div>
         </div>
     );
