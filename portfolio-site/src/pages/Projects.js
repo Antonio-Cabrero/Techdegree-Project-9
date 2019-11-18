@@ -49,7 +49,10 @@ const projectsData = [
 
     return (
         <div className={css.Projects_container}>
-            {projectCards}
+            <h2 className={css.Projects_title}>Projects</h2>
+            <div className={css.ProjectCards_container}>
+                {projectCards}
+            </div>
         </div>
     );
 }

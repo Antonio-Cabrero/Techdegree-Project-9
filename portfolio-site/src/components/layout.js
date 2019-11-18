@@ -29,6 +29,12 @@ const Layout = ({ children, handleMenu }) => {
       <div>
         <main>{children}</main>
       </div>
+      <footer style={{
+        background: "transparent",
+        color: "white",
+        margin: "2em auto",
+        maxWidt: "fit-contnent"
+      }}> Some Social Media here</footer>
     </div>
   )
 }

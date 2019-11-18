@@ -6,19 +6,23 @@
   font-family: "Work Sans", sans-serif;
 }
 
+html,
 body {
-  background-image: url("../images/img-pattern-opt.png");
+    height: max-content;
+}
+
+body {
+  background: linear-gradient(135deg, rgba(177,8,61,1) 0%, rgb(52, 38, 255) 100%);
   background-repeat: no-repeat;
-  background-size: 100vh ;
 }
   body::-webkit-scrollbar {
     display: none;
   }
 
 h1, h2, h3 ,h4 ,h5 ,h6 {
-  color: #950740;
+  color: #fff;
   font-weight: 300;
-  margin-bottom: 0.5rem;
+  margin: 2rem 0;
 }
 
 h2{
@@ -26,34 +30,18 @@ h2{
 }
 
 h3 {
-  font-size: calc(1.3rem + 0.6vw)
+  font-size: 1.4vw;
 }
 
 p {
   font-weight: 300;
-  color: #020202;
+  color: #ffffff;
   line-height: 1.5;
   margin: 1em 0;
 }    
 
 .Layout_wrap {
-  background-color: #ffffffa1;
+    background: transparent;
+    padding-bottom: 25%;
 }
 
-.switchContent-enter {
-  opacity: 0.01;
-}
-
-.switchContent-enter.switchContent-enter-active {
-  opacity: 1;
-  transition: opacity 500ms ease-in;
-}
-
-.switchContent-leave {
-  opacity: 1;
-}
-
-.switchContent-leave.switchContent-leave-active {
-  opacity: 0.01;
-  transition: opacity 300ms ease-in;
-}

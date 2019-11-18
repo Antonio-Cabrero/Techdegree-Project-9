@@ -1,24 +1,37 @@
 .About_container {
-    padding: 3em;
+    padding: 2em;
     padding-top: 0;
     display: flex;
     flex-direction: column;
+    max-width: 660px;
+    margin: 0 auto;
 }
 
-.About_h3 {
-    color: #950740;
+.About_h2 {
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.About_intro {
     font-weight: 300;
-    font-size: calc(1.3rem + 0.6vw)
+    font-size: 1.4em;
+    font-weight: 500;
+    text-transform: none;
+}
+
+.About_intro span {
+    font-size: 3vh;
+    margin-right: .5em;
 }
 
 .About_information,
 .About_paragraph {
-    margin-top: 1em;
+    max-width: 550px;
+    margin: 1.5em auto;
 }
 
 .About_paragraph {
     font-weight: 300;
-    color: #020202;
     line-height: 1.5;
 }
 
@@ -34,9 +47,9 @@
     margin: 0 auto;
     height: auto;
     max-width: 100%;
-    box-shadow: 0 1px 1px rgba(0,0,0,0.12), 
-                0 2px 2px rgba(0,0,0,0.12), 
-                0 4px 4px rgba(0,0,0,0.12), 
-                0 8px 8px rgba(0,0,0,0.12),
-                0 16px 16px rgba(0,0,0,0.12);
+    box-shadow:  0 1px 1px rgba(63, 55, 131, 0.13),
+                0 2px 2px rgba(45, 39, 100, 0.137), 
+                0 4px 4px rgba(43, 37, 97, 0.233), 
+                0 8px 8px rgba(39, 33, 97, 0.158),
+                0 16px 16px rgba(36, 30, 94, 0.164);
 }

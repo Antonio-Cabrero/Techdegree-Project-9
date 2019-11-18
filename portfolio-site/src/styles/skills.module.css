@@ -1,22 +1,23 @@
 .Skills_container {  
-    padding: 3em;
-    background-color: #ffffff7a;
+    padding: 2em;
     padding-top: 0;
     display: flex;
     flex-direction: column;
-    box-shadow: 0 0 65px rgb(255, 255, 255);
+    margin: 0 auto;
+    max-width: 660px;
 }
 
-.Technologies_container {
-    margin-top: 1em;
+.Skills_title {
+    font-size: 2em;
+    font-weight: 600;
 }
+
 
 .Technologies_title,
 .Tools_title { 
     margin-bottom: 1em;
     font-weight: 500;
-    color: #6c757d ;
-    font-size: calc(1rem + 0.6vw)
+    font-size: 1.2em;
 }
 
 .Technologies_container_items {
@@ -41,5 +42,5 @@
 
 .Tools_list_item {
     margin: .5em 0;
-    color: #950740;
+    color: #fff;
 }

@@ -5,7 +5,8 @@ import smile from '../images/smile.png'
 function Contact(props) {
     return (
             <div className={css.Contact_container}>
-                <h2>Let's build something together!</h2> 
+                <h2 className={css.Contact_title}>Contact</h2>
+                <p>Let's build something together!</p> 
                 <img className={css.Contact_img} src={smile} alt=""/>
                 <p>If you'd like to get in touch, please send me a brief message!</p>
                 <button className={css.Contact_btn}>Email Me!</button>

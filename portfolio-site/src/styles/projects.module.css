@@ -1,27 +1,48 @@
 .Projects_container {
-    display: block;
-    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    padding-top: 0;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.ProjectCards_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(17em, 1fr));
+    gap: 1.8em 0;
+    /* padding: 3rem; */
+    margin: 0 auto;
     padding-top: 0;
 }
 
-.ProjectCard_container {
+.Projects_title {
+    color: #fff;
+    font-size: 2em;;
+    font-weight: 600;
+}
+
+.ProjectCard {
     display: flex;
     flex-direction: column;
     word-wrap: break-word;
+    min-width: 250px;
     background: #ffffff;
-    margin-bottom: 2em;
-    box-shadow: 0 1px 1px rgba(0,0,0,0.12), 
-                0 2px 2px rgba(0,0,0,0.12), 
-                0 4px 4px rgba(0,0,0,0.12), 
-                0 8px 8px rgba(0,0,0,0.12),
-                0 16px 16px rgba(0,0,0,0.12);
+    box-shadow: 0 1px 1px rgba(63, 55, 131, 0.13),
+                0 2px 2px rgba(45, 39, 100, 0.137), 
+                0 4px 4px rgba(43, 37, 97, 0.233), 
+                0 8px 8px rgba(39, 33, 97, 0.158),
+                0 16px 16px rgba(36, 30, 94, 0.164);
     border-radius: 6px;
+    margin: 0 1.5em;
 
 }
 
 .Project_img {
     height: 200px;
     background: #ccc;
+    width: 100%;
+    border-radius: 6px 6px 0 0;
 }
 
 .ProjectCard_title {
@@ -36,6 +57,7 @@
 .ProjectCard_container_btn {
     display: flex;
     justify-content: space-around;
+    margin-top: auto;
 }
 
 .ProjectCard_container_btn a {

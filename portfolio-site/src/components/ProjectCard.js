@@ -3,7 +3,7 @@ import css from '../styles/projects.module.css'
 
 function ProjectCard(props) {
     return (
-        <div className={css.ProjectCard_container}>
+        <div className={css.ProjectCard}>
             <img className={css.Project_img} src={props.img} alt={props.alt}></img>
             <div className={css.ProjectCard_container_title}>
                 <h3 className={css.ProjectCard_title}>{props.name}</h3>

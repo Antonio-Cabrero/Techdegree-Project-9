@@ -9,7 +9,7 @@ import imgReact from '../images/img-react.png'
 function Skills(props) {
     return (
         <div className={css.Skills_container}>
-            <h2>Skills</h2>
+            <h2 className={css.Skills_title}>Skills</h2>
             <div className={css.Technologies_container}>
                 <h3 className={css.Technologies_title}>Technologies I like to create with</h3>
                 <div className={css.Technologies_container_items}>      
