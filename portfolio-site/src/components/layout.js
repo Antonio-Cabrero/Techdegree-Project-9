@@ -26,14 +26,15 @@ const Layout = ({ children, handleMenu }) => {
   return (
     <div className={css.Layout_wrap}>
       <Header siteTitle={data.site.siteMetadata.title} handleNavbar={handleMenu}/>
-      <div>
-        <main>{children}</main>
-      </div>
+      
+        <main className={css.Layout_main}>{children}</main>
+      
       <footer style={{
         background: "transparent",
         color: "white",
         margin: "2em auto",
-        maxWidt: "fit-contnent"
+        maxWidt: "fit-contnent",
+        marginBottom: "auto"
       }}> Some Social Media here</footer>
     </div>
   )

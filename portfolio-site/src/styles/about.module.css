@@ -7,20 +7,16 @@
     margin: 0 auto;
 }
 
-.About_h2 {
-    font-size: 2em;
-    font-weight: 600;
-}
 
 .About_intro {
     font-weight: 300;
-    font-size: 1.4em;
+    font-size: calc(1em + .3vh);
     font-weight: 500;
     text-transform: none;
 }
 
 .About_intro span {
-    font-size: 3vh;
+    font-size: calc(1em + .5vh);
     margin-right: .5em;
 }
 

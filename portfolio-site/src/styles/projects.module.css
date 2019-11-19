@@ -9,33 +9,26 @@
 
 .ProjectCards_container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(17em, 1fr));
-    gap: 1.8em 0;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.8em;
     /* padding: 3rem; */
     margin: 0 auto;
     padding-top: 0;
 }
 
-.Projects_title {
-    color: #fff;
-    font-size: 2em;;
-    font-weight: 600;
-}
 
 .ProjectCard {
     display: flex;
     flex-direction: column;
     word-wrap: break-word;
     min-width: 250px;
-    background: #ffffff;
+    background: linear-gradient(45deg, rgba(96, 90, 149, 0.287), transparent);
     box-shadow: 0 1px 1px rgba(63, 55, 131, 0.13),
                 0 2px 2px rgba(45, 39, 100, 0.137), 
                 0 4px 4px rgba(43, 37, 97, 0.233), 
                 0 8px 8px rgba(39, 33, 97, 0.158),
                 0 16px 16px rgba(36, 30, 94, 0.164);
     border-radius: 6px;
-    margin: 0 1.5em;
-
 }
 
 .Project_img {
@@ -48,10 +41,12 @@
 .ProjectCard_title {
     margin-top: .5em;
     margin-bottom: 1em;
+    font-weight: 400;
 }
 
 .ProjectCard_container_title {
-    margin: 1.2em;
+    height: 150px;
+    padding: 1.2em;
 }
 
 .ProjectCard_container_btn {
@@ -62,19 +57,19 @@
 
 .ProjectCard_container_btn a {
     text-align: center;
+    text-decoration: none;
     display: block;
     padding: .8em 0;
     padding-bottom: 1em;
     width: 100%;
     background: transparent;
-    color: #950740;
+    color: #fff;
     transition: all .3s ease;
 }
     .ProjectCard_container_btn a:hover,
     .ProjectCard_container_btn a:active,
     .ProjectCard_container_btn a:focus {
         color: #fff;
-        background: #950740;
-        padding: 1em;
+        padding: 0 1em;
         text-decoration: underline;
     }
