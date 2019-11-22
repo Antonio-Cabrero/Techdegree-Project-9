@@ -68,7 +68,7 @@ button {
 
 .Layout_wrap {
     background: transparent;
-    position: relative;
+    min-height: max-content;
 }
 
 .Layout_main {
@@ -82,7 +82,7 @@ button {
   
 
   .Layout_wrap {
-    min-height: 80vh;
+    min-height: 75vh;
   }
 }
 

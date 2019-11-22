@@ -1,44 +1,49 @@
 
 import React, { useState } from 'react'
 import css from '../styles/contact.module.css'
-import emailjs from 'emailjs-com'
+import emailjs, { send } from 'emailjs-com'
 
 function Contact(props) {
 
     const [sender, setSender] = useState('')
     const [senderEmail, setSenderEmail] = useState('')
     const [senderMessage, setSenderMessage] = useState('')
+    const [senderNameError, setSenderNameError] = useState(false)
+    const [senderEmailError, setSenderEmailError] = useState(false)
+    const [senderMessageError, setSenderMessageError] = useState(false)
 
     const sendEmail =(e) => {
         e.preventDefault()
 
         // Validate
         const validate = () => {
-            if (sender === "") return alert("Please provide a contact name")
-            if (senderEmail === "") return alert("Please provide an email")
-            if (senderMessage === "") return alert("Please provide a breif message")
-        
+                   sender === "" ? setSenderNameError(true)    : setSenderNameError(false)
+              senderEmail === "" ? setSenderEmailError(true)   : setSenderEmailError(false)
+            senderMessage === "" ? setSenderMessageError(true) : setSenderMessageError(false)
         }
+
         validate();
 
         // No errors found
-        if (sender && sendEmail && senderMessage !== ''){
-            // emailjs.send('gmail', 'template_380C5fzk', {
-            //     'from_name' : sender,
-            //     'reply_to' : senderEmail,
-            //     'message_html' : senderMessage
-            // }, 'user_8G6LzHqGcvKoVVeksmvnG')
-            // .then((result) => {
-            //     console.log(result.text)
-            // }, (error) => {
-            //     console.log(error.text)
-            // })
-            console.log("I was sent")
+        if (sender && senderEmail && senderMessage !== ''){
+            emailjs.send('gmail', 'template_380C5fzk', {
+                'from_name' : sender,
+                'reply_to' : senderEmail,
+                'message_html' : senderMessage
+            }, 'user_8G6LzHqGcvKoVVeksmvnG')
+            .then((result) => {
+                console.log(result.text + "Email Successfully Sent")
+            }, (error) => {
+                console.log(error.text)
+            })
 
             // Clear form 
             setSender('')
             setSenderEmail('')
             setSenderMessage('')
+            setSenderNameError(false)
+            setSenderEmailError(false)
+            setSenderMessageError(false)
         }
 
     }
@@ -59,28 +64,28 @@ function Contact(props) {
                 <p>If you'd like to get in touch, please send me a brief message!</p>
                 <form onSubmit={sendEmail} className={css.Contact_form}> 
                     <label> Name:   
-                        <input className={css.Contact_input} 
+                        <input className={senderNameError? css.Contact_input_error : css.Contact_input} 
                             type='text' 
                             name='sender' 
-                            placeholder='John Smith'
+                            placeholder={senderNameError? 'Please provide a contact name' : 'John Smith'}
                             value={sender}
                             onChange={handleChange}
                         />
                     </label>    
                     <label> Email:      
-                        <input className={css.Contact_input} 
+                        <input className={senderEmailError? css.Contact_input_error : css.Contact_input} 
                             type='email' 
                             name='senderEmail'
-                            placeholder='example@email.com'
+                            placeholder={senderEmailError? 'Please provide an email' : 'example@email.com'}
                             value={senderEmail}
                             onChange={handleChange}
                         />
                     </label>
                     <label> Message:
-                        <textarea className={css.Contact_textarea} 
+                        <textarea className={senderMessageError? css.Contact_textarea_error : css.Contact_textarea} 
                             type='text' 
                             name='senderMessage' 
-                            placeholder='What would you like to build together?' 
+                            placeholder={senderMessageError? 'Please provide a brief message' : 'What would you like to build together?' }
                             value={senderMessage}
                             onChange={handleChange}
                         />
