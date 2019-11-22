@@ -83,7 +83,7 @@
 .Contact_textarea:focus,
 .Contact_textarea:hover {
     outline: none;
-    box-shadow: 0 0 px 3px rgba(255, 255, 255, 0.2), 
+    box-shadow: 0 0 2px 3px rgba(255, 255, 255, 0.2), 
                 0 0 5px 3px rgba(255, 255, 255, 0.3),
                 0 0 12px 5px rgba(255, 255, 255, 0.1);
 }
