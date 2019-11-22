@@ -1,0 +1,13 @@
+.Footer_container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: auto;
+    padding: 3em 0;
+}
+
+.Footer_socialIcon {
+    height: 2em;
+    margin: 0 1em;
+    fill: #fff;
+}

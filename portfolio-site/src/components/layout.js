@@ -10,6 +10,7 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import Header from "./Header"
 import css from "../styles/layout.module.css"
+import Footer from "./Footer"
 
 const Layout = ({ children, handleMenu }) => {
   const data = useStaticQuery(graphql`
@@ -29,14 +30,7 @@ const Layout = ({ children, handleMenu }) => {
       
         <main className={css.Layout_main}>{children}</main>
       
-      <footer style={{
-        background: "transparent",
-        color: "white",
-        margin: "2em auto",
-        padding: "2em",
-        maxWidt: "fit-contnent",
-        marginBottom: "auto",
-      }}> Some Social Media here</footer>
+      <Footer />
     </div>
   )
 }

@@ -52,7 +52,6 @@
 .ProjectCard_container_btn {
     display: flex;
     justify-content: space-around;
-    margin-top: auto;
 }
 
 .ProjectCard_container_btn a {
