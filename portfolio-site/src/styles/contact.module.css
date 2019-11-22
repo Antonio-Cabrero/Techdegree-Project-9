@@ -5,7 +5,6 @@
     display: flex;
     flex-direction: column;
     max-width: 660px;
-    min-height: 65vh;
 }
 
 
@@ -21,23 +20,95 @@
                 0 16px 16px rgba(36, 30, 94, 0.164);
 }
 
+.Contact_form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2em;
+}
+
+    .Contact_form label {
+        color: #fff;
+        width: 100%;
+    }
+
+    .Contact_form:after {
+        content: "This form is submitted using EmailJs 🚀";
+        color: rgba(255, 255, 255, 0.658);
+        font-size: .8em;
+        font-weight: 300;
+        margin-top: 3em;
+        text-align: center;
+    }
+
+.Contact_input,
+.Contact_textarea {
+    border: none;
+    display: block;
+    color: #fff;
+    border-radius: 6px;
+    background: #ffffff36;
+    text-indent: 1em;
+    box-shadow: rgba(255, 255, 255, 0);
+    transition: box-shadow .5s ease;
+}
+
+.Contact_input {
+    width: 60%;
+    height: 3em;
+    margin: 1em 0;
+}
+    .Contact_input:after {
+        content: "Please fill in a name";
+        color: #fff;
+    }
+
+
+.Contact_textarea {
+    color: #fff;
+    border-radius: 6px;
+    resize: none;
+    margin-top: 1em;
+    width: 80%;
+    height: 20vh;
+    padding-top: 1em;
+
+}
+
+.Contact_input:focus,
+.Contact_input:hover,
+.Contact_textarea:focus,
+.Contact_textarea:hover {
+    outline: none;
+    box-shadow: 0 0 5px 3px rgba(255, 255, 255, 0.2), 
+                0 0 5px 3px rgba(255, 255, 255, 0.3),
+                0 0 12px 5px rgba(255, 255, 255, 0.1);
+}
+
+.Contact_input::placeholder,
+.Contact_textarea::placeholder {
+    color: rgba(255, 255, 255, 0.561);
+}
+
 .Contact_btn {
     display: block;
-    margin: 0 auto;
+    color: #72199E;
+    background: #fff;
+    width: 20%;
     margin-top: 2em;
-    padding: .8rem;
-    font-size: 1.3em;
     font-weight: 600;
-    box-shadow:  0 0px 2px rgba(255, 255, 255, 0.13),
-                0 1px 2px rgba(255, 255, 255, 0.137), 
-                0 2px 4px rgba(255, 255, 255, 0.233), 
-                0 8px 8px rgba(255, 255, 255, 0.158),
-                0 16px 16px rgba(255, 255, 255, 0.164);
-    transition: all .3s ease;
+    animation: none;
+    border: none;
 }
 
 .Contact_btn:hover,
 .Contact_btn:active,
 .Contact_btn:focus {
     border:none;
+    transform: none;
+    color: #fff;
+    background: transparent;
+    box-shadow: 0 0 5px 3px rgba(255, 255, 255, 0.2), 
+                0 0 5px 3px rgba(255, 255, 255, 0.3),
+                0 0 12px 5px rgba(255, 255, 255, 0.1);
 }

@@ -19,6 +19,7 @@ body {
     display: none;
   }
 
+
 h1, h2, h3 ,h4 ,h5 ,h6 {
   color: #fff;
   font-weight: 300;
@@ -56,7 +57,6 @@ button {
   button:hover,
   button:active,
   button:focus {
-    
     border-bottom: .5px solid white;
     transform: translateY(-3px);
   }
@@ -69,17 +69,20 @@ button {
 .Layout_wrap {
     background: transparent;
     position: relative;
-    /* padding-bottom: 30%; */
 }
 
+.Layout_main {
+  min-height: inherit;
+  
+}
 
 
 
 @media (min-width: 1024px) {
   
 
-  .Layout_main {
-    height: 75vh;
+  .Layout_wrap {
+    min-height: 80vh;
   }
 }
 

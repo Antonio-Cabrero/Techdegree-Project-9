@@ -10,7 +10,7 @@
 .ProjectCards_container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.8em;
+    gap: 1.8em 3em;
     /* padding: 3rem; */
     margin: 0 auto;
     padding-top: 0;
