@@ -1,7 +1,6 @@
 .Navbar_container {
     display: flex !important;
     justify-content: center !important;
-    margin-right: auto;
-    margin-left: auto;
+    margin: 1em auto;
 }
 

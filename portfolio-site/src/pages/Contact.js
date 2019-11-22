@@ -7,7 +7,6 @@ function Contact(props) {
             <div className={css.Contact_container}>
                 <h2 className={css.Contact_title}>Contact</h2>
                 <p>Let's build something together!</p> 
-                <img className={css.Contact_img} src={smile} alt=""/>
                 <p>If you'd like to get in touch, please send me a brief message!</p>
                 <button className={css.Contact_btn}>Email Me!</button>
             </div>

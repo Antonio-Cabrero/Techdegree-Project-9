@@ -68,6 +68,7 @@ button {
 
 .Layout_wrap {
     background: transparent;
+    position: relative;
     /* padding-bottom: 30%; */
 }
 

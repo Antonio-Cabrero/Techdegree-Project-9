@@ -33,8 +33,9 @@ const Layout = ({ children, handleMenu }) => {
         background: "transparent",
         color: "white",
         margin: "2em auto",
+        padding: "2em",
         maxWidt: "fit-contnent",
-        marginBottom: "auto"
+        marginBottom: "auto",
       }}> Some Social Media here</footer>
     </div>
   )
