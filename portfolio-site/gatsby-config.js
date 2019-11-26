@@ -1,4 +1,10 @@
 module.exports = {
+<<<<<<< HEAD
+=======
+  
+    pathPrefix: '/antonio-cabrero.github.io'
+  ,
+>>>>>>> parent of 5e552ed5... Merge pull request #8 from Antonio-Cabrero/revert-7-develop
   siteMetadata: {
     title: `Antonio Cabrero`,
     description: `This is Antonio Cabrero's personal porfolio for Front end web develepment.`,
@@ -24,7 +30,11 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
+<<<<<<< HEAD
         icon: ``, // This path is relative to the root of the site.
+=======
+        // icon: `./public/icons/..`, // This path is relative to the root of the site.
+>>>>>>> parent of 5e552ed5... Merge pull request #8 from Antonio-Cabrero/revert-7-develop
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
