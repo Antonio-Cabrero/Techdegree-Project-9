@@ -1,7 +1,7 @@
 module.exports = {
   
-    pathPrefix: '/antonio-cabrero.github.io'
-  ,
+  //   pathPrefix: '/antonio-cabrero.github.io'
+  // ,
   siteMetadata: {
     title: `Antonio Cabrero`,
     description: `This is Antonio Cabrero's personal porfolio for Front end web develepment.`,
