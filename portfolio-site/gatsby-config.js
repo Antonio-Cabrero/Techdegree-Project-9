@@ -1,4 +1,7 @@
 module.exports = {
+  
+    pathPrefix: '/antonio-cabrero.github.io'
+  ,
   siteMetadata: {
     title: `Antonio Cabrero`,
     description: `This is Antonio Cabrero's personal porfolio for Front end web develepment.`,
@@ -24,7 +27,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: ``, // This path is relative to the root of the site.
+        // icon: `./public/icons/..`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
