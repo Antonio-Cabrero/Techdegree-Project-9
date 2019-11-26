@@ -1,0 +1,152 @@
+.Contact_container {
+    padding: 2rem;
+    padding-top: 0;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 660px;
+}
+
+
+.Contact_img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    max-height: 240px;
+    box-shadow:  0 1px 1px rgba(63, 55, 131, 0.13),
+                0 2px 2px rgba(45, 39, 100, 0.137), 
+                0 4px 4px rgba(43, 37, 97, 0.233), 
+                0 8px 8px rgba(39, 33, 97, 0.158),
+                0 16px 16px rgba(36, 30, 94, 0.164);
+}
+
+.Contact_form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 2em;
+}
+
+    .Contact_form label {
+        color: #fff;
+        width: 100%;
+    }
+
+    .Contact_form:after {
+        content: "This form is submitted using EmailJs 🚀";
+        color: rgba(255, 255, 255, 0.658);
+        font-size: .8em;
+        font-weight: 300;
+        margin-top: 3em;
+        text-align: center;
+    }
+
+.Contact_input,
+.Contact_textarea,
+.Contact_input_error,
+.Contact_textarea_error {
+    border: none;
+    display: block;
+    color: #fff;
+    border-radius: 6px;
+    background: #ffffff36;
+    text-indent: 1em;
+    box-shadow: rgba(255, 255, 255, 0);
+    transition: box-shadow .5s ease;
+}
+
+.Contact_input,
+.Contact_input_error {
+    width: 100%;
+    height: 3em;
+    margin: 1em 0;
+}
+
+.Contact_textarea,
+.Contact_textarea_error {
+    color: #fff;
+    border-radius: 6px;
+    resize: none;
+    margin-top: 1em;
+    width: 100%;
+    height: 20vh;
+    padding-top: 1em;
+}
+
+.Contact_input_error,
+.Contact_textarea_error {
+    border: .5px solid red;
+}
+
+.Contact_input:focus,
+.Contact_input:hover,
+.Contact_textarea:focus,
+.Contact_textarea:hover {
+    outline: none;
+    box-shadow: 0 0 2px 3px rgba(255, 255, 255, 0.2), 
+                0 0 5px 3px rgba(255, 255, 255, 0.3),
+                0 0 12px 5px rgba(255, 255, 255, 0.1);
+}
+
+.Contact_input_error:focus,
+.Contact_input_error:hover,
+.Contact_textarea_error:focus,
+.Contact_textarea_error:hover {
+    outline: none;
+    box-shadow: 0 0 5px 3px rgba(255, 0, 0, 0.2), 
+                0 0 5px 3px rgba(255, 0, 0, 0.3),
+                0 0 12px 5px rgba(255, 0, 0, 0.1);
+}
+
+.Contact_input::placeholder,
+.Contact_input_error::placeholder,
+.Contact_textarea::placeholder,
+.Contact_textarea_error::placeholder {
+    color: rgba(255, 255, 255, 0.561);
+}
+
+.Contact_btn {
+    display: block;
+    color: #72199E;
+    background: #fff;
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 2.5em;
+    font-weight: 600;
+    animation: none;
+    border: none;
+}
+
+.Contact_btn:hover,
+.Contact_btn:active,
+.Contact_btn:focus {
+    border:none;
+    transform: none;
+    color: #fff;
+    background: transparent;
+    box-shadow: 0 0 5px 3px rgba(255, 255, 255, 0.2), 
+                0 0 5px 3px rgba(255, 255, 255, 0.3),
+                0 0 12px 5px rgba(255, 255, 255, 0.1);
+}
+
+@media (min-width: 1020px) {
+    .Contact_form {
+        padding: 2em;
+    }
+
+    .Contact_input,
+    .Contact_input_error {
+        width: 60%;
+    }
+
+    .Contact_textarea,
+    .Contact_textarea_error {
+        width: 80%;
+    }
+
+
+    .Contact_btn {
+        width: 20%;
+    }
+
+}

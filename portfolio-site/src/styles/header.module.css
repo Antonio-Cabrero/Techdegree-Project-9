@@ -1,0 +1,29 @@
+.Header {
+    display: block;
+    padding: 2em 0;
+    line-height: 1.2;
+    flex-direction: column;
+}
+
+.Header_container {
+    display: flex;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    flex-direction: column !important;
+    align-items: center !important;
+}
+
+.Header_title {    
+    margin: 0 auto;
+    color: #ffffff;
+    font-weight: 300;
+    font-size: calc(1.6em + .4vh);
+}
+
+@media (min-width: 964px) {
+    .Header_container {
+        display: flex;
+        flex-direction: row!important;
+    }
+}
