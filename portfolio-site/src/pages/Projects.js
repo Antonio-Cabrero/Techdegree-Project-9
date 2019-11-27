@@ -12,7 +12,7 @@ const projectsData = [
     {
         name: "Image Gallery",
         description: "An easy and fluid image gallery with search functionality",
-        url: "job.antonioc.dev",
+        url: "gallery.antonioc.dev",
         img: jobT,
         repo: "https://github.com/Antonio-Cabrero/Job_tracker/",
         lang: "React.js"
